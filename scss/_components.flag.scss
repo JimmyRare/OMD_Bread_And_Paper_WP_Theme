@@ -1,0 +1,75 @@
+.flag {
+    background-color: $latte;
+    color: #fff;
+    display: none;
+    font-family: 'Amatic SC';
+    font-size: 16px;
+    position: relative;
+    text-align: center;
+    width: 75px;
+
+    &:before,
+    &:after {
+        border-bottom: 10px solid transparent;
+        content: '';
+        height: 0;
+        position: absolute;
+        top: 100%;
+        width: 0;
+    }
+
+    &:before {
+        border-left: 35px solid $latte;
+        left: 0;
+    }
+
+    &:after {
+        border-right: 35px solid $latte;
+        right: 0;
+    }
+
+
+}
+
+@media screen and(min-width: $breakpoint-tablet) {
+    .flag {
+        font-size: 32px;
+        padding: 20px;
+        width: 150px;
+
+        &:before,
+        &:after {
+            border-bottom: 37.5px solid transparent;
+        }
+
+        &:before {
+            border-left: 75px solid $latte;
+        }
+
+        &:after {
+            border-right: 75px solid $latte;
+        }
+    }
+}
+
+@media screen and(min-width: $breakpoint-desktop) {
+    .flag {
+        display: block;
+        font-size: 36px;
+        padding: 20px;
+        width: 250px;
+
+        &:before,
+        &:after {
+            border-bottom: 62.5px solid transparent;
+        }
+
+        &:before {
+            border-left: 125px solid $latte;
+        }
+
+        &:after {
+            border-right: 125px solid $latte;
+        }
+    }
+}

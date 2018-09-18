@@ -1,0 +1,60 @@
+.button {
+    background-color: $latte;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba($mullvad, .25);
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'PT Sans Caption';
+    font-size: 1em;
+    margin: 0 auto;
+    outline: none;
+    padding: 10px 40px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    a { color: #fff; }
+}
+
+.button--green {
+    background-color: green;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.text-outline {
+    text-shadow:
+    -1px -1px 0 #fff,  
+     1px -1px 0 #fff,
+     -1px 1px 0 #fff,
+      1px 1px 0 #fff;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 800px;
+    width: 95%;
+}
+
+.flexbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scroll-wrap {
+    max-height: 100%;
+    overflow: auto;
+}
+
+.no-mobile { display: none; }
+@media screen and(min-width: $breakpoint-tablet) {
+    .mobile { display: none; }
+    .no-mobile { display: inherit; }
+}
+
+.hidden { display: none; }

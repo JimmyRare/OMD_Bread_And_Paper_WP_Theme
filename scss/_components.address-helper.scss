@@ -1,0 +1,20 @@
+.adress-helper {
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .15);
+    margin: 40px auto !important;
+}
+
+.ah-default-skin__powered-by {
+    display: none !important;
+}
+
+.adress-helper-info {
+    margin: 40px auto;
+    max-width: 800px;
+    text-align: center;
+
+    p {
+        font-size: 14px;
+        font-style: italic;
+    }
+}

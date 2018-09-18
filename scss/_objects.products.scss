@@ -1,0 +1,23 @@
+.products {
+    background: #f1f1f1;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    background-size: cover;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    // h1 { color: #fff; }
+}
+
+.products__container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+@media screen and(min-width:$breakpoint-tablet) {
+    .products {
+        // background: linear-gradient(0deg, #fff 70%, $mullvad 70%);
+    }
+}

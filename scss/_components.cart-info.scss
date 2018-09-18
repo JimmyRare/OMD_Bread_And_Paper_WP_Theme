@@ -1,0 +1,50 @@
+.cart-info {
+    display: flex;
+    position: relative;
+}
+
+.cart-info__symbol {
+    color: $mullvad;
+    font-size: 24px;
+    padding: 0 20px 0 5px;
+}
+
+.cart-info__count {
+    position: absolute;
+    left: 20px;
+    top: -10px;
+}
+
+.cart-info__sum {
+    background-color: #c0392b;
+    border-radius: 5px;
+    bottom: -10px;
+    color: #fff;
+    left: -5px;
+    font-size: 11px;
+    padding: 0 3px;
+    position: absolute;
+    text-transform: none;
+}
+
+.cart-info__checkout {
+    a { 
+        background-color: green;
+        color: #fff !important;
+        font-size: 13px;
+        display: block;
+        padding: 5px;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+}
+
+.cart-info__checkout--disabled {
+    a {
+        background-color: #f1f1f1;
+        cursor: default;
+        pointer-events: none;
+    }
+}
+
+#cart-menu-trigger { cursor: pointer; }

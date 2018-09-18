@@ -1,0 +1,52 @@
+.steps {
+    display: flex;
+    flex-flow: row wrap;
+    font-family: "Amatic SC";
+    font-size: 1.5em;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    top: -60px;
+    
+    img {
+        display: block;
+        margin: 40px auto 10px;
+        padding: 0 20px;
+        width: 125px;
+    }
+}
+
+@media screen and(min-width:$breakpoint-tablet) {
+    .steps {
+        font-size: 1.75em;
+
+        img {
+            padding: 0 30px;
+            width: 150px;
+        }
+    }
+}
+
+@media screen and(min-width:$breakpoint-desktop) {
+    .steps {
+        font-size: 2em;
+        top: -90px;
+
+        img {
+            padding: 0 40px;
+            width: 240px;
+        }
+    }
+}
+
+@media screen and(min-width:$breakpoint-huge) {
+    .steps {
+        font-size: 2.5em;
+        top: -110px;
+
+        img {
+            padding: 0 40px;
+            width: 300px;
+        }
+    }
+}

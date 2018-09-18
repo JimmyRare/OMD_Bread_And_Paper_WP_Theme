@@ -1,0 +1,60 @@
+.cart-menu {
+    background-color: rgba(#fff, 1);
+    border-left: 1px solid $mullvad;
+    bottom: 0;
+    box-shadow: -5px 0 5px rgba($mullvad, .15);
+    color: $mullvad;
+    font-family: 'PT Sans Caption';
+    font-size: 18px;
+    list-style-type: none;
+    margin: 0;
+    max-width: 90%;
+    overflow: hidden;
+    position: fixed;
+    right: -100%;
+    top: 60px;
+    transition: right .3s ease-in;
+    width: 300px;
+    z-index: 10;
+
+    &.open { right: 0; }
+
+    a {
+        color: $mullvad;
+        text-decoration: none;
+    }
+}
+
+.cart-menu__close {
+    cursor: pointer;
+    font-size: 24px;
+    padding: 20px 20px 0 0;
+    text-align: right;
+    width: 100%;
+}
+
+.cart__checkout-button {
+    background-color: green;
+    bottom: -60px;
+    color: #fff !important;
+    font-size: 14px;
+    font-weight: bold;
+    height: 60px;
+    left: 0;
+    line-height: 60px;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all .3s;
+    width: 100%;
+}
+
+.cart__checkout-button.show { bottom: 0; }
+
+.cart__checkout-button.disabled {
+    background-color: #f1f1f1;
+    cursor: default;
+    pointer-events: none;
+}
+
+.woocommerce-checkout .cart__checkout-button { display: none; }

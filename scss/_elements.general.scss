@@ -1,0 +1,30 @@
+* { box-sizing: border-box; }
+
+body {
+    color: $text-color;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.4;
+    margin-top: 0;
+    position: relative;
+}
+
+h1 {
+    font-family: 'Amatic SC';
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: 'PT Sans Caption';
+}
+
+@media screen and(min-width: $breakpoint-tablet) {
+    h1 { font-size: 2.5em; }
+    body { font-size: 1.3em; }
+}
+
+@media screen and(min-width: $breakpoint-desktop) {
+    h1 { font-size: 3em; }
+    body { font-size: 1.5em; }
+}
