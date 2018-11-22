@@ -28,7 +28,7 @@ jQuery(document).ready(function($) {
                     product: 'BREAD',
                     customerSystem: 'BREAD',
                 }, 
-                useGeoLocation: false
+                useGeoLocation: true
             };
             var diah = new DI.AddressHelper('diah-widget', config);
 
@@ -68,7 +68,7 @@ jQuery(document).ready(function($) {
                             streetNumber: address.streetNumber.streetNo,
                             streetEntrance: address.streetNumber.entrance,
                             postalCode: address.streetNumber.postalCode,
-                            floorNo: address.floor.floorNo,
+                            floorNo: floorNo,
                             flatNo: flatNo
                         },
                         success: function(data) {

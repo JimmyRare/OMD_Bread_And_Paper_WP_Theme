@@ -55,7 +55,7 @@
         <?php if( !empty( get_field( "settings_custom_popup", SETTINGS_PAGE_ID ) ) ) : ?>
             <div><?php the_field( "settings_custom_popup", SETTINGS_PAGE_ID ); ?></div>
         <?php else : ?>
-            <div>Du som bor i Kinda, Mjölbys och Linköpings kommun får brödet levererat lördagen den <?php echo $next_saturday; ?> om du beställer <strong>senast <?php echo $thursday_string; ?> kl.13.</strong></div>
+            <div>Du som bor i Kinda, Mjölby, Motala, Vadstena och Linköpings kommun får brödet levererat lördagen den <?php echo $next_saturday; ?> om du beställer <strong>senast <?php echo $thursday_string; ?> kl.13.</strong></div>
         <?php endif; ?>
         
         <span id="delivery-notice__close" class="fa fa-close"></span>
